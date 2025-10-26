@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Se eu manter em "en" o navegador vai me sugeria para traduzir -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em CSS</title>
+  <style>
+    body {
+      font-family: 'Arial', 'Helvetica', 'sans-serif'; /* família monoespaçada e serifada para 'Courier New'. O formato aqui está como "safe combination", pois não tem a primeira, tenta a segunda e assim por diante. */
+      /* "Medidas Absolutas": cm, mm, in(=2.54cm), px(16px é o default = 1em), pt(ponto), pc
+
+      "Medidas Relativas": em(Altura do M maiúsculo, pois é a mais usada), ex(altura x), rem (Altura relativa no root), vw(largura da viewport em %), vh(altura da viewport), %, ...
+      */
+
+      font-size: 1em;
+      /* Para o "font-size" é recomendado o "px" ou "em". */
+
+      font-weight: normal;
+      /* lighter, normal, bold e bolder e também de 100 a 900. A "font-weight" =  peso da fonte */
+
+      font-style: italic;
+      /* Aperte o "ctrl + space" para saber as opções que esta propriedade dá */
+
+      text-decoration: underline;
+
+      /* Existe um jeito mais encurtado (shorthand)
+      font: font-style -> font-weight -> font-size -> font-family
+      */
+
+      /* Ex: "font: italic bolder 3em 'Work Sans', sans-serif;" */
+    }
+
+    h1 {
+      font-family: 'Times New Roman', Times, serif; /* Visite o site http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cssref/css_websafe_fonts.asp.html#gsc.tab=0 para encontrar outras combinações */
+    }
+
+    h2 {
+      font: bold 2em 'Work Sans';
+      /* font: font-style -> font-weight -> font-size -> font-family */
+    }
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, iusto voluptatem? Quos perspiciatis saepe totam delectus dolore nesciunt ipsam ab, laudantium maxime eius cupiditate accusantium nihil quia fuga, aperiam sapiente. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quibusdam molestiae sequi unde obcaecati inventore nesciunt illo placeat saepe eaque, aperiam libero, doloribus voluptate voluptatibus fuga fugit cum illum consectetur.</p>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo unde, iusto necessitatibus rem sapiente fuga atque ducimus facilis! Quibusdam ipsa eum nam dolorem dolorum possimus nesciunt magnam accusamus voluptatibus.</p>
+  <h2>Subtítulo do exercício</h2>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius libero delectus, illo fugiat esse repudiandae maxime numquam eos eaque voluptatibus optio! Explicabo voluptates voluptate quos asperiores ullam voluptas numquam saepe.</p>
+</body>
+</html>

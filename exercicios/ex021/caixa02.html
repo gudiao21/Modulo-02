@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head> <!-- Configurações do meu site -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grouping Tags</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: dimgray;
+      margin: 0px;
+    }
+
+    header {
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    h1 {
+      box-shadow: inset 2px 1px 14px 6px rgba(0, 0, 0, 0.514); /* "inset" = sombra para dentro do elemento e "outset" a sombra vai ficar para fora do elemento. */
+    }
+
+    nav {
+     background-color: rgb(102, 102, 102);
+     padding: 3px;
+     /* "deslocamento-horizontal" "desloc.-vertical" "espalhamento&sombra" */
+
+    }
+
+    nav > a { /* Sendo "nav" pai de "a". */
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      margin-right: 30px;
+    }
+
+    nav > a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      background-color: white;
+      padding: 10px;
+      margin: 10px;
+      border-radius: 10px 0px; /* Não aceita valores negativos. Pode ser configurada individualmente aqui ou no "dev tools". Posso entrar também com dois parâmetros apenas, pois as diagonais se corresponderão. */
+      box-shadow: 4px 4px 9px 0px rgba(0, 0, 0, 0.438);
+    }
+
+    article {
+      background-color: lightgray;
+      padding: 5px;
+    }
+
+    article > aside { /* Sendo "aside" filho de "article". */
+    background-color: rgb(165, 165, 165);
+    }
+
+    footer {
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      padding: 4px;
+      margin: 0px;
+    }
+
+    footer > p {
+      margin: 0px; /* Usado por conta do "padding: 4px;" que estava ficando muito grande por conta do parágrafo "p". */
+    }
+
+    div#bola {
+      height: 100px;
+      width: 100px;
+      margin: 10px;
+      background-color: #fff;
+      border-radius: 50%; /* O "border-radius" pode ser usado com "%"" também, além de "px" */
+    }
+  </style>
+</head>
+<body>
+  <header><!-- Cabeçalho -->
+    <h1>Meu site</h1>
+    <nav>
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+      <a href="#">Link4</a>
+      <a href="#">Link5</a>
+    </nav>
+  </header>
+  <main> <!-- Conteúdo Principal -->
+    <section id="assuntos">
+      <p>Esportes , Política e Tecnologia</p>
+    </section>
+    <section id="noticias">
+      <article>
+        <h2>Notícia sobre o Brasil</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, inventore eveniet! Repellendus tempora quibusdam quas neque at fuga deserunt beatae! Amet, mollitia illum distinctio dolores voluptate unde consectetur eum ex!</p>
+        <aside> <!-- Assunto periférico ao artigo -->
+          <p>Artigo escrito por José da Silva</p>
+        </aside>
+      </article>
+      <article>
+
+      </article>
+    </section>
+  </main>
+  <footer><!-- Rodapé -->
+    <p>Desenvolvido pelo CursoemVideo</p>
+  </footer>
+  <div id="bola"></div>
+</body>
+</html>
+
+<!-- OBS: Não é porque um "article" está dentro de um "section", que não possa ser ao contrário. -->

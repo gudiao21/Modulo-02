@@ -1,0 +1,14 @@
+{
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabCompletion": "on",
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": true
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascript",
+    "plaintext": "html"
+  }
+}
